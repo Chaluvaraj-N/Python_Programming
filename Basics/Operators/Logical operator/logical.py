@@ -39,3 +39,7 @@ if is_weekend or is_holiday:
 # NOT: Inverts the condition
 if not is_holiday:
     print("It's a working day")
+
+
+
+print(not(False and True))
