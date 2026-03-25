@@ -12,7 +12,7 @@ print("12" is s1)
 print("a12" in s1)
 
 x=100
-print("1" in x)    # TypeError: argument of type 'int' is not iterable
+print(1 in x)    # TypeError: argument of type 'int' is not iterable
 
 x="100"
 print("1" in x)    # True, because "1" is a substring of "
