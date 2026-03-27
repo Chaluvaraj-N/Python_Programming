@@ -16,7 +16,7 @@ for ch in name:
 
 for i in [10,20,30]:
     print(i,end=" ")
-print("\n=====")
+print("\n==========")
 for i in [40,50,60]:
     print(i,end=" ")
 
