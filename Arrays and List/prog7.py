@@ -34,4 +34,4 @@ def finddiff(arr):
 s,p,d= finddiff(arr)
 
 print("Array:", arr)
-print(f"sum is {s}\n prod is {p} \n diff is{d}")
+print(f"sum is {s}\nprod is {p}\n diff is{d} ")
