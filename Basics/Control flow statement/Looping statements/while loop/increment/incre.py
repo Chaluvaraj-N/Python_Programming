@@ -38,3 +38,16 @@ num = 3
 while i <= 10:
     print(num, "x", i, "=", num * i)
     i += 1
+
+
+
+
+# 🔥EASY UNDERSTANDING
+# 👉 while loop =
+# Start → Condition → Update → Repeat
+
+
+# 💡 REAL LIFE THINKING
+# ATM machine → keeps asking PIN
+# Login system → repeats until correct
+# Game loop → runs until game over
