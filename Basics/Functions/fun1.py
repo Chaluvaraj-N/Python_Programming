@@ -1,5 +1,15 @@
 #function :- a function is a resuable block of code that performs a specific task. It helps to break down a program into smaller and modular chunks, making it easier to read, maintain, and debug. and it is independent of code that is include to perform a specific task. it can be called multiple times in a program, and it can also take input parameters and return output values.
 
+
+# 🔶 WHY USE FUNCTIONS?
+
+# ✔ Reuse code
+# ✔ Reduce repetition
+# ✔ Make code clean
+# ✔ Easy debugging
+
+
+
 def greetings():
     print("hello good morning")
 greetings()
@@ -56,3 +66,31 @@ def func():
     print(y) #global variable
 y="ujwal" #global variable
 func()
+
+
+
+
+
+# 🔷 WHEN TO USE WHAT?
+
+# | Type           | Use          |
+# | -------------- | ------------ |
+# | No parameter   | Fixed task   |
+# | With parameter | Input needed |
+# | With return    | Need result  |
+# | Without return | Only display |
+
+
+
+# 🔥 REAL LIFE UNDERSTANDING
+
+# 👉 Function = Machine
+# Input → parameters
+# Process → code
+# Output → return
+
+
+
+# 💡 EASY MEMORY TRICK
+
+# 👉 Function =  Input → Process → Output
