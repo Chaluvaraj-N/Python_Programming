@@ -1,4 +1,4 @@
-def insertionsort(arr):
+def insertionsortasc(arr):
     n=len(arr)
     #cycles
     for i in range(0,n-1):
@@ -9,6 +9,19 @@ def insertionsort(arr):
             else:
                 break
     return arr
+
+def insertionsortdesc(arr):
+    n=len(arr)
+    #cycles
+    for i in range(0,n-1):
+    #comparison logic with next neighouring value
+        for j in range(i+1,0,-1):
+            if arr[j-1] < arr[j]:
+                arr[j-1],arr[j] = arr[j], arr[j-1]
+            else:
+                break
+    return arr
+
 
 
 def createarray():
@@ -23,6 +36,8 @@ def createarray():
 
 arr = createarray()
 print("original array:", arr)
-insertionsort(arr)
+insertionsortasc(arr)
 print("sorted array in ascending order:",arr )
+insertionsortdesc(arr)
+print("sorted array in descending order:", arr)
     
