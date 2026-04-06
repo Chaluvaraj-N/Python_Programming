@@ -6,37 +6,40 @@ def createIntArr():
         try:
             n = int(input("enter valu: "))
             l1.append(n)
-        except Exception as e:
+        except:
             return l1
         
 def mergeAscSorted(arr1, arr2):
     res=[]
     n1, n2 = len(arr1), len(arr2)
-    i,j=0,0 #as the arrays are merged from smaller to larger
-    for k in range(0,(n1+n2)):
-    #checking whether cursors are under control
+    i, j = 0, 0
+
+    for k in range(0, (n1 + n2)):
         if i < n1 and j < n2:
             if arr1[i] <= arr2[j]:
                 res.append(arr1[i])
-                i+=1
+                i += 1
             else:
-                res.append(arr1[i])
-                j+=1
+                res.append(arr2[j])  
+                j += 1
         else:
-            #special case
-            if i < n1: #extra val's are on arr1
+            if i < n1:
                 res.append(arr1[i])
-                i +=1
-            elif j<n2:
+                i += 1
+            elif j < n2:
                 res.append(arr2[j])
-                j+=1
+                j += 1
+
     return res
+
+
 print("enter the val's into array 1: ")
 arr1 = createIntArr()
+
 print("enter the val's into array 2: ")
 arr2 = createIntArr()
+
 print("Array 1: ", arr1) 
 print("Array 2: ", arr2)
 
-mergeAscSorted(arr1, arr2)
-print("Merged Array: ",arr1) 
+print(mergeAscSorted(arr1, arr2))
