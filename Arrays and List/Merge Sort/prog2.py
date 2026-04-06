@@ -14,11 +14,13 @@ def mergealternate(arr1, arr2):
     for j in range(0,len(arr2)):
         arr1. insert(odd, arr2[j])
         odd +=2
+
 print("enter the val's into array 1: ")
 arr1 = createIntArr()
 print("enter the val's into array 2: ")
 arr2 = createIntArr()
 print("Array 1: ", arr1) 
 print("Array 2: ", arr2)
+
 mergealternate(arr1, arr2)
 print("Merged Array: ",arr1) 
