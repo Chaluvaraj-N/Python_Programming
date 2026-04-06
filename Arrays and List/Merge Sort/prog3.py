@@ -21,6 +21,7 @@ def mergeAscSorted(arr1, arr2):
                 i += 1
             else:
                 res.append(arr2[j])  
+                
                 j += 1
         else:
             if i < n1:
