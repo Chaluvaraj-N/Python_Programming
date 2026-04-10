@@ -2,11 +2,13 @@
 
 class Solution:   
     def peakElement(self, arr):
-        # Code here
+    
         n = len(arr)
+
         #the length of the array is n==1
         if n == 1:
             return 0
+        
         #the peak is in b/w
         for i in range(1, n - 1):
             
