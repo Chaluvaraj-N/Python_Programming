@@ -1,23 +1,25 @@
-#wap to sum  the numbers present in a given and join it at end of rest of characters in the string
+# WAP to sum the numbers present in a string and append at the end
+# Input: 12ab12c100
+# Output: abc124
 
-def sumStrNumber(s):
-    nstr,charDig,sumNum='',0,0
+s = input("Enter the string: ")
+print("Original string:", s)
 
-    for i in range(0,len(s)):
-        if"0" <=s[i]<="9":
-            charDig=(charDig*10)+(ord(s[i])-48)
+sum = 0
+num = ""
+res = ""
 
-        else:
-            if charDig!=0:
-                sumNum=sumNum+charDig
-                charDig=0
-            nstr=nstr+s[i]
+for i in range(len(s)):
+    if '0' <= s[i] <= '9':
+        num = num + s[i]
+    else:
+        if num != "":
+            sum = sum + int(num)
+            num = ""
+        res = res + s[i]
 
-    if charDig!=0:
-        sumNum=sumNum+charDig
-        charDig=0
+# last number check
+if num != "":
+    sum = sum + int(num)
 
-    return (nstr+str(sumNum))
-s=input("Enter a string:")
-sumNum=sumStrNumber(s)
-print(sumNum)
+print("Result:", res + str(sum))
