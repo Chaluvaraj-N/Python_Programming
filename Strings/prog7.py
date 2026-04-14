@@ -23,7 +23,7 @@ print("Original String:",s)
 res=strIncreRevRec(s," ",0)
 print("Reverse String using Recursion:",res)
 
-print("=================using increment logic and decrement logic without using recursion=====================")
+print("=================using increment logic without using recursion=====================")
 
 def strIncreRev(s):
     nstr = " "
@@ -34,5 +34,17 @@ s = input("Enter a string: ")
 print("The original string is: ", s)
 res = strIncreRev(s)
 print("The reversed string is: ", res)
+
+print("=================using decrement logic without using recursion=====================")
+
+def strDecreRev(s):
+    nstr = " "
+    for i in range(len(s)-1, -1, -1):
+        nstr = nstr + s[i]
+    return nstr
+s = input("Enter a string: ")
+print("The original string is: ", s)    
+res = strDecreRev(s)
+print("The reversed string is: ", res)  
 
 
