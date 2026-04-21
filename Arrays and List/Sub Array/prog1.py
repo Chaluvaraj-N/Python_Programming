@@ -1,5 +1,10 @@
 #An array formed by including continous sequence of elements from a major array 
 
+# for a given array length = n
+# the total number of sub arrays = (n*(n+1))/2
+# eg :- arr = [1,2,3,4] n = 4
+# total number of sub arrays = (4*(4+1))/2 = 10
+
 
 def createIntArr():
     print("enter the elements for an array to be created: ")
