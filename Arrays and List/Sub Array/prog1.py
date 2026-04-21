@@ -21,8 +21,12 @@ def displaySubArr(arr):
         for j in range(i, len(arr)):
             res.append(arr[j])
             print(res)
+
+
 arr = createIntArr()
 print("the original array is: ", arr)
 displaySubArr(arr)
+
+
 
         
