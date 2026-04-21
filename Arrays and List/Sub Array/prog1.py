@@ -1,3 +1,6 @@
+#An array formed by including continous sequence of elements from a major array 
+
+
 def createIntArr():
     print("enter the elements for an array to be created: ")
     l1 = []
