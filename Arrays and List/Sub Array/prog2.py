@@ -1,3 +1,6 @@
+#displaying of sub arrays
+
+
 def createIntArr():
     print("enter the elements for an array to be created: ")
     l1 = []
